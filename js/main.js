@@ -313,19 +313,6 @@ function setupHome() {
     })
   })
 
-  gsap.fromTo(
-    '.timeline__rail span',
-    { scaleY: 0 },
-    {
-      scaleY: 1,
-      ease: 'none',
-      scrollTrigger: { trigger: '.timeline', start: 'top 70%', end: 'bottom 60%', scrub: true }
-    }
-  )
-  app.querySelectorAll('.tl').forEach(li => {
-    ScrollTrigger.create({ trigger: li, start: 'top 65%', toggleClass: 'is-past' })
-  })
-
   stretch(app.querySelector('.contact__big'), '.cl', { min: 70, max: 150, radius: 0.1 })
   bindCopy()
 }

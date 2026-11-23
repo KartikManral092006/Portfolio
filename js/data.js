@@ -40,8 +40,7 @@ export const offline = [
 export const stats = [
   { value: '0.95', label: 'Held-out AUC of Flux’s vendor-risk model. A classic scorecard scored 0.43.' },
   { value: '97', suffix: '%', label: 'Line coverage across the 75 smart-contract tests in Lien.' },
-  { value: '30', label: 'Live race attacks run against Lien’s contracts. None left it insolvent.' },
-  { value: '5', label: 'Hackathon builds in one season, November to December 2026.' }
+  { value: '30', label: 'Live race attacks run against Lien’s contracts. None left it insolvent.' }
 ]
 
 export const projects = [
@@ -51,7 +50,7 @@ export const projects = [
     kind: 'Cross-chain lending protocol',
     year: '2026',
     role: 'Solo: contracts, bots, dashboard',
-    status: 'Live on testnet. Built for the Reactive Omni Buildathon.',
+    status: 'Live on testnet.',
     line: 'Collateral on Base. Credit on Unichain. One ledger on Reactive.',
     visual: 'lien',
     stack: ['Solidity', 'Foundry', 'Reactive Network', 'Base Sepolia', 'Unichain Sepolia', 'TypeScript'],
@@ -144,7 +143,7 @@ export const projects = [
     kind: 'Team approvals for AI coding agents',
     year: '2026',
     role: 'Solo: CLI, web app, realtime room',
-    status: 'Live, with the CLI published on npm. Built for the Nexconn Build Challenge 2026.',
+    status: 'Live, with the CLI published on npm.',
     line: 'Your coding agent moves fast. Production waits for your team.',
     visual: 'tollgate',
     stack: ['Next.js 16', 'React 19', 'Prisma 7', 'PostgreSQL', 'Redis', 'Nexconn SDK', 'Node CLI', 'Vitest'],
@@ -195,44 +194,6 @@ export const stack = [
     name: 'Smart contracts',
     items: ['Solidity', 'Foundry', 'Reactive Network', 'Fuzz testing', 'Cross-chain callbacks'],
     proof: ['lien']
-  },
-  {
-    name: 'Engineering habits',
-    items: ['Baselines before claims', 'Held-out evaluation', 'Vitest', 'Pytest', 'Forge tests', 'GitHub Actions CI', 'Rate limiting', 'Publishing to npm'],
-    proof: ['lien', 'flux', 'planner', 'tollgate']
-  }
-]
-
-export const record = [
-  {
-    date: '15 Nov',
-    title: 'Family Health Binder',
-    event: 'UGREEN AI NAS Hackathon',
-    text: 'A five-mode care skill for a home NAS: a family health binder, a visit recorder with transcription and a medicine cabinet that reads labels. Passed the official skill checker with zero errors.'
-  },
-  {
-    date: '23 Nov',
-    title: 'Tollgate',
-    event: 'Nexconn Build Challenge 2026',
-    text: 'Team approvals for AI coding agents, in the Workplace and Collaboration track. Live, with its CLI published on npm.'
-  },
-  {
-    date: '4 Dec',
-    title: 'Revenant',
-    event: 'Kiroween 2026',
-    text: 'Brings abandoned npm packages back to life, using differential property-based tests to prove the new version behaves like the old one.'
-  },
-  {
-    date: '5 Dec',
-    title: 'Lien',
-    event: 'Reactive Omni Buildathon',
-    text: 'Cross-chain lending across three chains in the Every Second Counts track, live on testnet.'
-  },
-  {
-    date: '8 Dec',
-    title: 'TALLOW',
-    event: 'Reddit Game of the Day 2026',
-    text: 'An endless ink-style survival game that runs inside a Reddit post, where the creature hunts where earlier players walked.'
   }
 ]
 

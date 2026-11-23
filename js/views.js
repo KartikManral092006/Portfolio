@@ -1,4 +1,4 @@
-import { site, manifesto, marquee, skills, offline, stats, projects, stack, record, shelf, training, goals } from './data.js'
+import { site, manifesto, marquee, skills, offline, stats, projects, stack, shelf, training, goals } from './data.js'
 
 const esc = s =>
   String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
@@ -211,32 +211,7 @@ export function homeView() {
     </div>
   </section>
 
-  <section class="record" id="record" aria-labelledby="record-title">
-    <div class="record__head">
-      <h2 class="display" id="record-title">Five hackathons, one season</h2>
-      <p>Between November and December 2026 I entered five hackathons, each with a different stack. Ordered by deadline.</p>
-    </div>
-    <div class="timeline">
-    <span class="timeline__rail" aria-hidden="true"><span></span></span>
-    <ol class="timeline__list">
-      ${record
-        .map(
-          r => `
-        <li class="tl">
-          <time class="tl__date">${esc(r.date)}</time>
-          <div class="tl__body">
-            <h3 class="tl__title">${esc(r.title)}</h3>
-            <p class="tl__event">${esc(r.event)}</p>
-            <p class="tl__text">${esc(r.text)}</p>
-          </div>
-        </li>`
-        )
-        .join('')}
-    </ol>
-    </div>
-  </section>
-
-  <section class="offline" id="offline" aria-labelledby="offline-title">
+<section class="offline" id="offline" aria-labelledby="offline-title">
     <h2 class="offline__title" id="offline-title">Off the keyboard</h2>
     <div class="offline__grid">
       ${offline
