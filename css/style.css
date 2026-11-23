@@ -331,9 +331,9 @@ button {
   color: var(--on-accent);
 }
 
-.nav.is-accent .nav__mark i:nth-child(2),
-.menu-open .nav__mark i:nth-child(2) {
-  background: var(--on-accent);
+.nav.is-accent .nav__dot,
+.menu-open .nav__dot {
+  fill: var(--on-accent);
 }
 
 .nav.is-accent .nav__cta {
@@ -356,41 +356,21 @@ button {
 }
 
 .nav__mark {
-  display: inline-flex;
-  align-items: flex-end;
-  gap: 3px;
-  height: 18px;
+  display: block;
+  height: 20px;
+  width: auto;
+  overflow: visible;
 }
 
-.nav__mark i {
-  width: 4px;
-  background: currentColor;
-  transition: height 0.5s var(--ease);
+.nav__dot {
+  fill: var(--accent);
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.5s var(--ease), fill 0.3s;
 }
 
-.nav__mark i:nth-child(1) {
-  height: 8px;
-}
-
-.nav__mark i:nth-child(2) {
-  height: 18px;
-  background: var(--accent);
-}
-
-.nav__mark i:nth-child(3) {
-  height: 12px;
-}
-
-.nav__logo:hover .nav__mark i:nth-child(1) {
-  height: 16px;
-}
-
-.nav__logo:hover .nav__mark i:nth-child(2) {
-  height: 7px;
-}
-
-.nav__logo:hover .nav__mark i:nth-child(3) {
-  height: 18px;
+.nav__logo:hover .nav__dot {
+  transform: translateY(-14px) rotate(45deg);
 }
 
 .nav__links {
