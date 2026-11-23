@@ -17,27 +17,11 @@ export const manifesto =
 
 export const marquee = ['Backend', 'Generative AI', 'Workflow automation', 'Vibe coding']
 
-export const disciplines = [
-  {
-    name: 'Backend',
-    text: 'APIs and databases built for the day things go wrong: Postgres row-level security, rate limits, retries and tests that run on every push.',
-    proof: ['flux', 'tollgate']
-  },
-  {
-    name: 'Generative AI',
-    text: 'LLM agents, retrieval and text-to-SQL, measured against baselines instead of taken on faith.',
-    proof: ['planner', 'flux']
-  },
-  {
-    name: 'Workflow automation',
-    text: 'Agents and pipelines that take repetitive work off people, with a human approval step where a mistake would be expensive.',
-    proof: ['tollgate', 'planner']
-  },
-  {
-    name: 'Vibe coding',
-    text: 'I build with AI pair-programmers like Claude Code and Kiro to move fast, and I still read every diff and keep the tests green.',
-    proof: ['tollgate', 'lien']
-  }
+export const skills = [
+  { group: 'Languages', items: ['C', 'C++', 'JavaScript', 'TypeScript', 'Python', 'SQL'] },
+  { group: 'Web development', items: ['MERN stack', 'FastAPI', 'WordPress development', 'Docker'] },
+  { group: 'AI and agents', items: ['LangChain', 'LangGraph', 'MCPs', 'Claude Skills'] },
+  { group: 'Automation', items: ['n8n', 'Zapier', 'Business workflow automation'] }
 ]
 
 export const offline = [

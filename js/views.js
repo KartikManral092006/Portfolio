@@ -1,4 +1,4 @@
-import { site, manifesto, marquee, disciplines, offline, stats, projects, stack, record, shelf, training, goals } from './data.js'
+import { site, manifesto, marquee, skills, offline, stats, projects, stack, record, shelf, training, goals } from './data.js'
 
 const esc = s =>
   String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
@@ -134,21 +134,18 @@ export function homeView() {
 
   <div class="marquee" aria-hidden="true"><div class="marquee__track">${strip}${strip}</div></div>
 
-  <section class="about" id="about" aria-labelledby="about-title">
+  <section class="about" id="skills" aria-labelledby="skills-title">
     <div class="about__head">
-      <h2 class="display" id="about-title">What I do</h2>
-      <p>Four things I’m good at, each backed by a project you can open.</p>
+      <h2 class="display" id="skills-title">Skills</h2>
+      <p>The languages, frameworks and tools I work with.</p>
     </div>
     <div class="about__grid">
-      ${disciplines
+      ${skills
         .map(
-          d => `
+          g => `
         <article class="disc">
-          <h3 class="disc__name">${esc(d.name)}</h3>
-          <p class="disc__text">${esc(d.text)}</p>
-          <p class="disc__proof">See it in ${d.proof
-            .map(s => `<a href="#/work/${s}">${esc(byslug(s).title)}</a>`)
-            .join(' and ')}</p>
+          <h3 class="disc__name">${esc(g.group)}</h3>
+          <ul class="chips chips--skills">${g.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
         </article>`
         )
         .join('')}
