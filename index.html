@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kartik Manral</title>
+  <meta name="description" content="Kartik Manral, final-year B.Tech student building AI systems and full-stack products.">
+  <meta name="theme-color" content="#0d1210">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230d1210'/%3E%3Crect x='7' y='18' width='4' height='7' fill='%23ecebe6'/%3E%3Crect x='14' y='8' width='4' height='17' fill='%238FB3A0'/%3E%3Crect x='21' y='14' width='4' height='11' fill='%23ecebe6'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/anybody-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
+  <script type="importmap">{ "imports": { "three": "./vendor/three.module.js" } }</script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body class="is-loading">
+  <a class="skip" href="#app">Skip to content</a>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__count"><span class="loader__num">0</span></div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__accent"></div>
+    <div class="curtain__black"><p class="curtain__title"></p></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <header class="nav">
+    <a class="nav__logo" href="#/" data-magnetic aria-label="Kartik Manral, home">
+      <span class="nav__mark"><i></i><i></i><i></i></span>
+      <span class="nav__name">Kartik Manral</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#/" data-section="about" data-magnetic>About</a>
+      <a href="#/" data-section="work" data-magnetic>Work</a>
+      <a href="#/" data-section="stack" data-magnetic>Stack</a>
+      <a href="#/" data-section="record" data-magnetic>Record</a>
+      <a href="#/" data-section="contact" data-magnetic class="nav__cta">Contact</a>
+    </nav>
+    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" data-magnetic>
+      <span class="nav__menu-text">Menu</span>
+      <span class="nav__burger"><i></i><i></i></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__links" aria-label="Menu">
+      <a href="#/" data-section="about">About</a>
+      <a href="#/" data-section="work">Work</a>
+      <a href="#/" data-section="stack">Stack</a>
+      <a href="#/" data-section="record">Record</a>
+      <a href="#/" data-section="contact">Contact</a>
+    </nav>
+  </div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <noscript>
+    <div class="noscript">This site needs JavaScript for its 3D scenes and transitions. Turn it on to see Kartik Manral’s work.</div>
+  </noscript>
+</body>
+</html>
