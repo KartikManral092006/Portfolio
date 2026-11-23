@@ -263,7 +263,7 @@ function contactView() {
       ${twitter}${discord}${linkedin}${resume}
     </div>
     <footer class="foot">
-      <p>© 2026 ${esc(site.first)} ${esc(site.last)}. ${esc(site.role)}, ${esc(site.school)}.</p>
+      <p>© 2026 ${esc(site.first)} ${esc(site.last)}</p>
     </footer>
   </section>`
 }
