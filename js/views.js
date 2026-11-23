@@ -36,7 +36,7 @@ const shelfBook = b =>
 function shelfView() {
   const half = Math.ceil(shelf.length / 2)
   return `
-      <div class="shelf" aria-label="Bookshelf. Three of the books open into a chapter about me.">
+      <div class="shelf" aria-label="Bookshelf. Two of the books open into a chapter about me.">
         <div class="shelf__side">${shelf.slice(0, half).map(shelfBook).join('')}</div>
         <div class="shelf__side">${shelf.slice(half).map(shelfBook).join('')}</div>
       </div>`
@@ -221,7 +221,7 @@ export function homeView() {
           <p class="hobby__word" aria-label="${esc(o.word)}">${letters(o.word, 'hb')}</p>
           <div class="hobby__body">
             <p class="hobby__text">${esc(o.text)}</p>
-            <ul class="chips chips--ink">${o.tags.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+            ${o.tags.length ? `<ul class="chips chips--ink">${o.tags.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
           </div>
         </div>`
         )

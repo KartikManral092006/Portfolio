@@ -34,6 +34,11 @@ export const offline = [
     word: 'Calisthenics',
     text: 'Bodyweight strength training, built one rep at a time.',
     tags: ['Bodyweight strength']
+  },
+  {
+    word: 'Music',
+    text: 'A music lover, through and through.',
+    tags: []
   }
 ]
 
@@ -199,7 +204,7 @@ export const stack = [
 
 export const shelf = [
   { id: 'build', title: 'What I build', style: 'accent', h: 0.96, w: 64 },
-  { id: 'train', title: 'Calisthenics', style: 'paper', h: 0.86, w: 58 },
+  { id: 'train', title: 'Calisthenics', style: 'paper', h: 0.86, w: 58, closed: true },
   { id: 'self', title: 'Self-improvement', style: 'grey', h: 1, w: 52, closed: true },
   { id: 'business', title: 'Business', style: 'outline', h: 0.8, w: 60, closed: true },
   { id: 'philosophy', title: 'Philosophy', style: 'paper', h: 0.92, w: 54, closed: true },

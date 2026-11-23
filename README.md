@@ -13,7 +13,7 @@ I like building things that actually work, mostly backends, generative AI apps a
 
 ## Off the keyboard
 
-I read books on self-improvement, business and philosophy, and I train calisthenics, one rep at a time.
+I read books on self-improvement, business and philosophy, I train calisthenics, one rep at a time, and I'm a music lover.
 
 ## Say hi
 

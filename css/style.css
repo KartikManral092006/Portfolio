@@ -1279,6 +1279,10 @@ button {
   line-height: 1.5;
 }
 
+.hobby__text:last-child {
+  margin-bottom: 0.6em;
+}
+
 .chips--ink li {
   border-color: var(--on-accent);
   color: var(--on-accent);
